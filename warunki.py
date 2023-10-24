@@ -60,7 +60,7 @@ print(lista_bledow)
 
 odp = input(f"Ile bokow ma trójkąt")
 
-if odp == "3"
+if odp == "3":
     print("Brawo")
 else:
     print("Masz w książce")
