@@ -14,18 +14,31 @@ while True:
     odp = input("Podaj opcje z menu")
     if odp >= '5':
         break
-    a = float(input("Podaj liczbe1"))
-    b = float(input("Podaj liczbe2"))
-    if odp == '1':
-        print(a + b)
-    elif odp == '2':
-        print(a - b)
-    elif odp == '3':
-        print(a * b)
-    elif odp == '4':
-        if b != 0:
+    try:
+        a = float(input("Podaj liczbe1"))
+        b = float(input("Podaj liczbe2"))
+        if odp == '1':
+            print(a + b)
+        elif odp == '2':
+            print(a - b)
+        elif odp == '3':
+            print(a * b)
+        elif odp == '4':
+            # if b != 0:
             print(a / b)
+        # else:
+        # print("nie dziel przez zero")
         else:
-            print("nie dziel przez zero")
+            print("nie znam takiego działania")
+    except ZeroDivisionError:
+        print("Nie dziel przez zero")
+    except ValueError:
+        print("Nie używaj liter")
+    except TypeError:
+        print("Bład typu")
+    except Exception as e:
+        print("Wystąpił błąd", e)
     else:
-        print("nie znam takiego działania")
+        print("Tylko gdy nie ma błędu")
+    finally:
+        print("Wykonuje się zawsze")

@@ -15,6 +15,8 @@ while True:
 
 
     match odp:
+        case '5':
+            break
         case '1':
             print(a + b)
         case  '2':
@@ -26,5 +28,7 @@ while True:
                 print(a / b)
             else:
                 print("nie dziel przez zero")
+        case '5':
+            break
         case _:
             print("nie znam takiego działania")
