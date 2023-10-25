@@ -23,6 +23,8 @@ with open('test.log', 'w', encoding='utf-8') as file:
 # a - dopisnaie danych na końcu pliku
 with open('test.log', 'a', encoding='utf-8') as file:
     file.write('dośdane\n')
+    file.write('doćdane\n')
+    file.write('doądane\n')
 
 with open('test.log', 'r', encoding='utf-8') as f:
     lines = f.read()
