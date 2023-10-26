@@ -34,11 +34,15 @@ print("------")
 for i in data.iloc[1]:
     print(i)
 
+
 print(data.loc[1, "Amount"])  # w loc mozna poznać po nazwie
 print(data.iloc[1, 2])  # w iloc trzeba podac indeks kolumny
 
+for i, e in enumerate(data.iloc[1]):
+    print(data.columns[i], ",", e)  #wypisanie wartości z wiersza o indeksie 1 i wskazanie przypisania do kolumny
 
-print(data.loc[1])
+
+#print(data.loc[1])
 
 
 
