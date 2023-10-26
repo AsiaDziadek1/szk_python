@@ -22,7 +22,7 @@ print(dict_2)
 
 with open(filename, 'w', newline='') as csv_f:
     # csvwriter = csv.writer(csv_f)
-    csvwriter = csv.DictWriter(csv_f, fieldnames=fields, delimiter=";")
+    csvwriter = csv.DictWriter(csv_f, fieldnames=fields, delimiter=",")
     # csvwriter.writerow(row)  #zapisanie pojedynczego wiersza z listy
     csvwriter.writeheader()  #zapisanie nagłówka czyli nazw kolumn
     csvwriter.writerow(dict_2)  #zapisanie danych ze słownika do csv

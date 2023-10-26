@@ -1,7 +1,7 @@
-name;brand;year;cgpa
-radek;coe;3;0
-radek;coe;3;0
-Zosia;cos;4;9
-Asia;cot;5;11.5
-Monika;cob;9;8
-Zenek;coo;1;2
+name,brand,year,cgpa
+radek,coe,3,0
+radek,coe,3,0
+Zosia,cos,4,9
+Asia,cot,5,11.5
+Monika,cob,9,8
+Zenek,coo,1,2
