@@ -3,7 +3,7 @@ class Human:
     Klasa człowieka w Pythonie
     """
 
-    def __init__:(self, imie, wiek, plec="k"):  # inicjator, konstruktor
+    def __init__(self, imie, wiek, plec="k"):  # inicjator, konstruktor
         self.imie = imie
         self.wiek = wiek
         self.plec = plec
