@@ -38,9 +38,10 @@ ferrari.licznik()   #Jedziesz z szybkością 50 km/h
 ferrari.__predkosc = 0  #ustawianie prędkości w sposób niekontrolowany przez klasę
 ferrari.__predkosc = 100  #ustawianie prędkości w sposób niekontrolowany przez klasę
 ferrari.licznik()
-print(ferrari.__predkosc)
+# print(ferrari.__predkosc) - nie uzywamy gdy pola mamy oznaczone jako prywatne
 ferrari.hamuj()
 ferrari.hamuj()
 ferrari.licznik()  #enkapsulacja wystawia pole klasy - pole prędkosć
-print(ferrari.__predkosc)
+# print(ferrari.__predkosc)
+
 
